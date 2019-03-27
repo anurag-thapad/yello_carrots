@@ -6,6 +6,10 @@
 /* =================================== */
 /*  Basic Style
 /* =================================== */
+body{
+  margin: 0;
+  padding: 0;
+}
 ::-moz-selection {
   /* Code for Firefox */
   background-color: #fab700;
@@ -817,15 +821,14 @@ th {
 }
 
 .iot {
+  text-align: center;
   display: block;
-  position: absolute;
-  background-image:url(../img/iot.png);
+  position: relative;
   background-size: cover;
   backgroound-repeat: no-repeat;
-  margin-left: 53vw;
-  margin-top: -60vh;
-  height: 380px;
-  width: 550px;
+  height: 300px;
+  width: 450px;
+  z-index: 2;
 }
 
 
@@ -2123,7 +2126,7 @@ h6 {
 .nav-menu,
 .nav-menu * {
   margin: 0;
-  padding: 0;
+  padding: 0px;
   list-style: none;
 }
 
@@ -2139,6 +2142,7 @@ h6 {
 .nav-menu li {
   position: relative;
   white-space: nowrap;
+  padding-left: 30px
 }
 
 .nav-menu>li {
@@ -2470,9 +2474,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .banner-content {
-  text-align: center;
-  margin-left: -40vw;
-  margin-top: -20vh;
+  z-index: 2;
+  position: relative;
+  margin-left: 1vw;
+  margin-top: 20vh;
 }
 
 .banner-content h1 {
@@ -2482,6 +2487,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .banner-content h6 {
   font-size: 1em;
+  font-weight: bold;
 }
 
 
@@ -2500,7 +2506,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 
 
-/* @media (max-width: 991.98px) {
+@media (max-width: 991.98px) {
   .banner-content h1 br {
     display: none;
   }
@@ -2529,7 +2535,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   .banner-content br {
     display: none;
   }
-} */
+}
 
 .header-btn {
   background-color: #fab700;
@@ -2545,6 +2551,49 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: transparent;
   color: #fff;
 }
+.head{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    /* background-color: #00605a; */
+    /* background-image: url("dashboardgraphics.png"); */
+    /* background-size: cover;
+    background-repeat: no-repeat; */
+}
+/* .slideright{
+-moz-animation: slideright 1s linear;
+-o-animation: slideright 1s linear;
+animation: slideright 1s linear;
+}
+@keyframes slideright {
+  0%{opacity: 0; transform: translateX(10%);}
+  100%{opacity: 1; transform: translateX(0);}
+}
+@-o-keyframes slideright {
+  0%{opacity: 0; transform: translateX(10%);}
+  100%{opacity: 1; transform: translateX(0);}
+}
+@-moz-keyframes slideright {
+  0%{opacity: 0; transform: translateX(10%);}
+  100%{opacity: 1; transform: translateX(0);}
+}
+.slideleft{
+-moz-animation: slideleft 1s linear;
+-o-animation: slideleft 1s linear;
+animation: slideleft 1s linear;
+}
+@keyframes slideleft {
+  0%{opacity: 0; transform: translateX(-10%);}
+  100%{opacity: 1; transform: translateX(0);}
+}
+@-o-keyframes slideleft {
+  0%{opacity: 0; transform: translateX(-10%);}
+  100%{opacity: 1; transform: translateX(0);}
+}
+@-moz-keyframes slideleft {
+  0%{opacity: 0; transform: translateX(-10%);}
+  100%{opacity: 1; transform: translateX(0);}
+} */
 
 .cat-area #hexagon:hover {
   background: #EC008C;
@@ -3272,7 +3321,7 @@ opacity: 1;
 }
 
 
-@media only screen and (max-width: 1280px) and (min-width: 1024px) {
+/* @media only screen and (max-width: 1280px) and (min-width: 1024px) {
   .banner-content {
     text-align: center;
     margin-left: -40vw;
@@ -3396,59 +3445,8 @@ opacity: 1;
     font-size: 0.3em;
     color: black;
   }
-}
+} */
 
-
-@media only screen and (max-width: 1280px) and (min-width: 1024px) {
-  .iot {
-    margin-left: 53vw;
-    margin-top: -60vh;
-    height: 370px;
-    width: 550px;
-  }
-}
-
-@media only screen and (max-width: 1024px) and (min-width: 813px) {
-  .iot {
-    margin-left: 50vw;
-    margin-top: -60vh;
-    height: 360px;
-    width: 570px;
-  }
-}
-
-@media only screen and (max-width: 812px) and (min-width: 800px) {
-  .iot {
-    margin-left: 50vw;
-    margin-top: -60vh;
-    height: 360px;
-    width: 550px;
-  }
-}
-
-@media only screen and (max-width: 800px) and (min-width: 768px) {
-
-}
-
-@media only screen and (max-width: 767px) and (min-width: 736px) {
-
-}
-
-@media only screen and (max-width: 736px) and (min-width: 667px) {
-
-}
-
-@media only screen and (max-width: 667px) and (min-width: 414px) {
-
-}
-
-@media only screen and (max-width: 414px) and (min-width: 375px) {
-
-}
-
-@media (max-width: 375px) {
-
-}
 
 
 
