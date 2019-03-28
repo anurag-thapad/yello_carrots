@@ -608,6 +608,44 @@ th {
   transition: all 0.3s ease 0s;
 }
 
+.servicesOverlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(-40deg,#039990, #007770,#00605a);
+  overflow: hidden;
+  width: 0%;
+  height: 100%;
+  transition: 0.2s ease;
+}
+
+.servicesText{
+  font-size: 1.2em;
+  color: #848484;
+  z-index: 2;
+}
+.servicesHead{
+  font-size: 2.0em;
+  letter-spacing: 2px;
+  font-weight: 800;
+  color: #474747;
+  margin-bottom: 10%;
+  z-index: 2;
+}
+
+.servicesBox{
+  position: relative;
+  box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.servicesBox:hover .servicesOverlay {
+  cursor: pointer;
+  width: 100%;
+}
+.servicesBox:hover .servicesText .servicesHead{
+  color: white;
+}
+
 .section-full {
   padding: 100px 0;
 }
@@ -2159,7 +2197,8 @@ h6 {
 .nav-menu li {
   position: relative;
   white-space: nowrap;
-  padding-left: 30px
+  padding-left: 30px;
+  font-size: 1.5em;
 }
 
 .nav-menu>li {
@@ -2637,18 +2676,6 @@ animation: slideleft 1s linear;
   height: 60vh;
   padding-top: 10vh;
 }
-.box :hover{
-  background-image: linear-gradient(to right, #00605a, #33658a);
-  /* background-color: #33658a */
-}
-.box :hover h4{
-  color: white;
-}
-.box :hover p{
-  color: white;
-}
-
-
 
 .cat-area .hb-sm {
   line-height: 40px;
