@@ -3090,7 +3090,7 @@ opacity: 1;
   background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
   width: 100%;
-  height: 78.5vh;
+  height: 13.99%;
   display: block;
 
 }
@@ -3102,7 +3102,7 @@ opacity: 1;
   color: white;
   background-color: #000;
   opacity: 0.5;
-  margin-top: 5.3vw;
+  margin-top: 6.3%;
 }
 
 .privacy ul {
@@ -3116,6 +3116,7 @@ opacity: 1;
   text-decoration: none;
   display: inline-block;
   color: white;
+  opacity: 1;
   font-weight: bold;
   font-size: 12px;
   outline: none;
@@ -3149,9 +3150,9 @@ opacity: 1;
 
 
 .footer-area {
-  padding-top: 100px;
+  padding-top: 10vh;
 
-  background-image: url(../img/footer.jpg);
+  background-image: url(../img/footer.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -3191,10 +3192,6 @@ opacity: 1;
 @media (max-width: 991.98px) {
   .footer-social {
     text-align: left;
-  }
-
-  .footer-image {
-    height: 70vh;
   }
 }
 
@@ -3299,22 +3296,23 @@ opacity: 1;
   .single-footer-widget {
     margin-bottom: 30px;
   }
+  .footer-image{
+    height: 12.6%;
+  }
+  .privacy{
+    margin-top: 4.7%;
+  }
 }
 
 @media (max-width: 800px) {
   .social-widget {
     margin-top: 30px;
   }
-
-  .footer-image {
-    height: 76.9vh;
+  .footer-image{
+    height: 13%;
   }
-}
-
-@media (max-width: 740px) {
-
-  .footer-image {
-    height: 81.5vh;
+  .privacy{
+    margin-top: 3%;
   }
 }
 
