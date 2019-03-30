@@ -608,17 +608,37 @@ th {
   transition: all 0.3s ease 0s;
 }
 
-.servicesOverlay{
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-image: linear-gradient(-40deg,#039990, #007770,#00605a);
-  overflow: hidden;
-  width: 0%;
-  height: 100%;
-  transition: 0.2s ease;
+
+.iotIconAnimation{
+  -webkit-animation: zoomOutIn 0.5s linear 0.5s infinite alternate; /* Safari 4.0 - 8.0 */
+  animation: zoomOutIn 0.5s linear 0.5s infinite alternate;
 }
+
+.iotIcon{
+  -webkit-transition: height 0.5s ease;
+  -moz-transition: height 0.5s ease;
+  -o-transition: height 0.5s ease;
+  transition: height 0.5s ease;
+  -webkit-transition-delay: 1s;
+  -moz-transition-delay: 1s;
+  -o-transition-delay: 1s;
+  transition-delay: 1s;
+}
+
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes zoomOutIn{
+  0%   {height: 17%;}
+  100% {height: 12%;}
+}
+
+/* Standard syntax */
+@keyframes  zoomOutIn{
+  0%   {height: 17%;}
+  100% {height: 12%;}
+}
+
+
 
 .servicesText{
   font-size: 1.2em;
@@ -640,9 +660,105 @@ th {
   text-align: center;
   margin: 0%;
   overflow: hidden;
+  transition: 1s box-shadow;
 }
 .servicesBox:hover .icons{
  color: #00605a;
+}
+
+
+.servicesBox:hover {
+  box-shadow: 0 5px 35px 0px rgba(0,0,0,.1);
+}
+
+.servicesBox:hover:before, .servicesBox:hover:after {
+  background: #FDA8CF;
+  border-radius: 75px;
+  z-index: -1;
+  animation: 1s clockwise infinite;
+}
+
+.servicesBox:hover:after {
+
+  animation: 2s counterclockwise infinite;
+}
+
+@keyframes clockwise {
+  0% {
+    top: -5px;
+    left: 0;
+  }
+  12% {
+    top: -2px;
+    left: 2px;
+  }
+  25% {
+    top: 0;
+    left: 5px;
+  }
+  37% {
+    top: 2px;
+    left: 2px;
+  }
+  50% {
+    top: 5px;
+    left: 0;
+  }
+  62% {
+    top: 2px;
+    left: -2px;
+  }
+  75% {
+    top: 0;
+    left: -5px;
+  }
+  87% {
+    top: -2px;
+    left: -2px;
+  }
+  100% {
+    top: -5px;
+    left: 0;
+  }
+}
+
+@keyframes counterclockwise {
+  0% {
+    top: -5px;
+    right: 0;
+  }
+  12% {
+    top: -2px;
+    right: 2px;
+  }
+  25% {
+    top: 0;
+    right: 5px;
+  }
+  37% {
+    top: 2px;
+    right: 2px;
+  }
+  50% {
+    top: 5px;
+    right: 0;
+  }
+  62% {
+    top: 2px;
+    right: -2px;
+  }
+  75% {
+    top: 0;
+    right: -5px;
+  }
+  87% {
+    top: -2px;
+    right: -2px;
+  }
+  100% {
+    top: -5px;
+    right: 0;
+  }
 }
 
 
@@ -650,7 +766,6 @@ th {
   font-size: 5em;
   margin-bottom: 20%;
 }
-
 .section-full {
   padding: 100px 0;
 }

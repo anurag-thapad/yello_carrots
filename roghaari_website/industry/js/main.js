@@ -306,6 +306,32 @@ $(document).ready(function(){
         }
     });
 
+		var iotArr=[3,8,5,2,7,0,10,6,1,4,9];
+
+		var heightIot=[47,47,47,67,47,43,47,36,42,47,47];
+		var iotArrPointer=0;
+		var flag=false;
+		setInterval(function () {
+
+			if(flag){
+				if(heightIot[iotArrPointer]+20==$('.iotIcon').eq(iotArr[iotArrPointer]).height()){
+					$('.iotIcon').eq(iotArr[iotArrPointer]).height("-=20");
+				}
+				else{
+					$('.iotIcon').eq(iotArr[iotArrPointer]).height(heightIot[iotArrPointer]);
+				}
+
+			}
+			iotArrPointer=(iotArrPointer+1)%11;
+			let x=$('.iotIcon').eq(iotArr[iotArrPointer]).height("+=20");
+			if(x){
+				flag=true;
+			}
+			else{
+				flag=false;
+			}
+
+		},1600);
 
 
 
