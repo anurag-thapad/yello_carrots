@@ -626,7 +626,7 @@ th {
   z-index: 2;
 }
 .servicesHead{
-  font-size: 2.0em;
+  font-size: 1.4em;
   letter-spacing: 2px;
   font-weight: 800;
   color: #474747;
@@ -635,15 +635,20 @@ th {
 }
 
 .servicesBox{
-  position: relative;
   box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 10% 5%;
+  text-align: center;
+  margin: 0%;
+  overflow: hidden;
 }
-.servicesBox:hover .servicesOverlay {
-  cursor: pointer;
-  width: 100%;
+.servicesBox:hover .icons{
+ color: #00605a;
 }
-.servicesBox:hover .servicesText .servicesHead{
-  color: white;
+
+
+.servicesBox .icons{
+  font-size: 5em;
+  margin-bottom: 20%;
 }
 
 .section-full {
@@ -2415,7 +2420,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .section-gap {
-  padding: 120px 0;
+  padding: 10% 0;
 }
 
 .section-title {
@@ -2672,10 +2677,10 @@ animation: slideleft 1s linear;
   margin-left: auto;
   margin-right: auto;
 }
-.card{
+/* .card{
   height: 60vh;
   padding-top: 10vh;
-}
+} */
 
 .cat-area .hb-sm {
   line-height: 40px;
