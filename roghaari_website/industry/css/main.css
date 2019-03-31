@@ -4131,21 +4131,34 @@ opacity: 1;
 
 
 /*About Team Style*/
-.box2{
-      height:350px;
-      z-index: 2;
-      position: absolute;
-      width: 100vw;
-      transform: rotate(4deg);
-      margin-top: 7.3%;
-      background-color: white;
-  }
-.box3{
+.box1 {
+  height: 80vh;
+}
+
+.box2 {
+  height: 100px;
+  position: absolute;
+  width: 100%;
+  padding: 0;
+  transform: rotateZ(2deg);
+  margin-top: -3.5%;
+  background-color: white;
+}
+
+.box4 {
+  height: 100px;
+  position: absolute;
+  width: 100%;
+  padding: 0;
+  transform: rotateZ(-2deg);
+  margin-top: -3.5%;
+}
+
+.box3 {
   height: 350px;
-    z-index: 2;
-    position: absolute;
-    width: 100vw;
-    transform: rotate(-4deg);
-    margin-top: -3.5%;
-    background-color: white;
+  position: absolute;
+  width: 100%;
+  padding: 0;
+  /* margin-top: -3.5%; */
+  background-color: white;
 }
