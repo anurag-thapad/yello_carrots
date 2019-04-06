@@ -3237,6 +3237,7 @@ opacity: 1;
 
 .privacy li a {
   padding: 15px 8px 0px 8px;
+  margin-right: 5vw;
   list-style-type: disc;
   text-decoration: none;
   display: inline-block;
