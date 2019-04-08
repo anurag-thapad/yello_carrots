@@ -520,7 +520,11 @@ th {
 .pb-20 {
   padding-bottom: 20px;
 }
-
+.style{
+  font-family: roboto, arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
 .pb-25 {
   padding-bottom: 25px;
 }
@@ -655,7 +659,7 @@ th {
 }
 
 .tagline{
-  font-size: 2em;
+  font-size: 1.75em;
   line-height: normal;
   letter-spacing: 2px;
   font-weight: 400;
