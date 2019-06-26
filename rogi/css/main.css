@@ -2265,6 +2265,9 @@ h6 {
   color: white !important;
   transition: all 0.5s;
 }
+#company-name.company-name-scrolled {
+  color: white;
+}
 
 
 @media (max-width: 673px) {
@@ -3238,7 +3241,7 @@ opacity: 1;
 }
 
 .privacy ul {
-  margin-left: 40vw;
+  margin-left: 35vw;
 }
 
 
@@ -4149,34 +4152,32 @@ opacity: 1;
 
 
 /*About Team Style*/
-.box1 {
+.box1
+{
   height: 80vh;
 }
-
-.box2 {
-  height: 100px;
-  position: absolute;
-  width: 100%;
-  padding: 0;
-  transform: rotateZ(2deg);
-  margin-top: -3.5%;
-  background-color: white;
-}
-
-.box4 {
-  height: 100px;
-  position: absolute;
-  width: 100%;
-  padding: 0;
-  transform: rotateZ(-2deg);
-  margin-top: -3.5%;
-}
-
-.box3 {
+.box2{
+      height:15vh;
+      position: absolute;
+      width: 100%;
+      padding: 0;
+      transform: rotateZ(2deg);
+      margin-top: -3.5%;
+      background-color: white;
+  }
+  .box4{
+        height:100px;
+        position: absolute;
+        width: 100%;
+        padding: 0;
+        transform: rotateZ(-2deg);
+        margin-top: -3.5%;
+    }
+.box3{
   height: 350px;
-  position: absolute;
-  width: 100%;
-  padding: 0;
-  /* margin-top: -3.5%; */
-  background-color: white;
+    position: absolute;
+    width: 100%;
+    padding: 0;
+    /* margin-top: -3.5%; */
+    background-color: white;
 }

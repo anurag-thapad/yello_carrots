@@ -164,6 +164,13 @@ $(document).ready(function(){
       $('#header').removeClass('header-scrolled');
     }
   });
+	$(window).scroll(function() {
+    if ($(this).scrollTop() > 600) {
+      $('#company-name').addClass('company-name-scrolled');
+    } else {
+      $('#company-name').removeClass('company-name-scrolled');
+    }
+  });
 
 
     $('.active-realated-carusel').owlCarousel({
